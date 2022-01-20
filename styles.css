@@ -1,0 +1,177 @@
+/*1. Global Styles*/
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+    opacity: 0.9;
+    margin: 0px 0px;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*2. header*/
+
+.logo {
+    height: 50px;
+    width: auto;
+    display: inline-flex;
+    align-self: flex-start;
+    padding-bottom: 0px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+header {
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 10px;
+    right: 10px;
+    background: 100%, black;
+}
+
+nav {
+    padding-right: 20px;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: underline;
+    color: seashell;
+    padding: 10px;
+}
+
+
+/*3. main mission*/
+
+.mission {
+    height: 700px;
+    width: auto;
+    min-width: 900px;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+    background-size: cover;
+    background-position: center;
+    /*lower down main*/
+    margin: 20px 40px 20px 40px;
+    align-items: center;
+    /*insert words*/
+    display: flex;
+    justify-content: center;
+}
+
+.word {
+    background-color: black;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+
+/*4. main fuatured tea*/
+
+.tea {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 1000px;
+}
+
+img {
+    height: 200px;
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+figcaption {
+    font-weight: bold;
+}
+
+
+/*5.main locations*/
+
+.location {
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: auto;
+    min-width: 900px;
+    justify-content: center;
+    margin: 60px 40px 0 40px;
+}
+
+.locations {
+    display: flex;
+    justify-content: space-around;
+}
+
+.downtown {
+    flex-basis: 300px;
+    background-color: black;
+    margin: 15px 40px;
+    height: auto;
+    opacity: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*lower down header*/
+
+#location {
+    padding-top: 40px;
+}
+
+
+/*6. main contact*/
+
+.contact {
+    height: 200px;
+}
+
+
+/*7. footer*/
+
+footer>h5 {
+    text-align: left;
+    padding: 20px;
+}
+
+
+/*media*/
+
+@media only screen and (max-width: 800px) {
+    header,
+    footer {
+        display: none;
+    }
+}
+
+
+/*@media only screen and (max-width: 1020px) {
+        .mission {
+            height: auto;
+            min-width: none;
+            width: 1200px;
+        }
+    }*/
